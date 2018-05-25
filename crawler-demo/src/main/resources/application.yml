@@ -1,0 +1,20 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate.ddl-auto: update
+  database:
+    driverClassName: org.postgresql.Driver
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/crawler
+    username: postgres
+    password: 123123
+  rabbitmq:
+    username: admin
+    password: admin
+    port: 5672
+    host: 192.168.52.129
+    publisher-confirms: true
+    virtual-host: /
